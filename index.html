@@ -1,240 +1,195 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Gustavo Salvador Espinoza Aliste, Software Engineer y Full Stack Developer especializado en React, Django, AWS, Docker y PostgreSQL.">
+  <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="Gustavo Espinoza — Software Engineer">
+  <meta property="og:description" content="Full Stack Developer y technical owner de plataformas SaaS inmobiliarias en producción.">
+  <meta property="og:type" content="website">
+  <title>Gustavo Espinoza | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Gustavo Salvador Espinoza Aliste","jobTitle":"Software Engineer | Full Stack Developer","email":"mailto:gustavo.espinoza.aliste@gmail.com","telephone":"+56936387510","address":{"@type":"PostalAddress","addressLocality":"Isla de Maipo","addressCountry":"CL"},"url":"https://github.com/Gustasco","sameAs":["https://github.com/Gustasco","https://www.linkedin.com/in/gustavo-espinoza-aliste-a4882625a/"]}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#portfolio-content">Saltar al contenido</a>
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+  <header class="app-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" data-tab-link="inicio" aria-label="Ir al inicio"><span class="brand-mark">GE</span><span class="brand-copy">Gustavo Espinoza<small>Software Engineer</small></span></a>
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+      <nav class="tabs" role="tablist" aria-label="Secciones del portfolio">
+        <button class="tab active" id="tab-inicio" role="tab" aria-selected="true" aria-controls="inicio" data-tab="inicio"><i class="bx bx-home-alt"></i><span>Inicio</span></button>
+        <button class="tab" id="tab-perfil" role="tab" aria-selected="false" aria-controls="perfil" data-tab="perfil" tabindex="-1"><i class="bx bx-user"></i><span>Perfil</span></button>
+        <button class="tab" id="tab-experiencia" role="tab" aria-selected="false" aria-controls="experiencia" data-tab="experiencia" tabindex="-1"><i class="bx bx-briefcase-alt-2"></i><span>Experiencia</span></button>
+        <button class="tab" id="tab-stack" role="tab" aria-selected="false" aria-controls="stack" data-tab="stack" tabindex="-1"><i class="bx bx-code-alt"></i><span>Stack</span></button>
+        <button class="tab" id="tab-productos" role="tab" aria-selected="false" aria-controls="productos" data-tab="productos" tabindex="-1"><i class="bx bx-layer"></i><span>Productos</span></button>
+      </nav>
 
-        <title>Portfolio website</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Gustavo Espinoza Aliste</a>
-                </div>
+      <a class="header-cta" href="mailto:gustavo.espinoza.aliste@gmail.com"><span>Contacto</span><i class="bx bx-send"></i></a>
+    </div>
+  </header>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Inicio</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">Conoceme</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Proyectos</a></li>
-                    </ul>
-                </div>
+  <main class="app-main" id="portfolio-content">
+    <section class="panel active" id="inicio" role="tabpanel" aria-labelledby="tab-inicio" tabindex="0">
+      <div class="panel-inner home-grid">
+        <div class="home-copy">
+          <p class="status"><span></span> Disponible para nuevos desafíos</p>
+          <p class="overline">Software Engineer · Full Stack Developer</p>
+          <h1>Construyo productos digitales <em>completos.</em></h1>
+          <p class="lead">Diseño arquitectura, desarrollo frontend y backend, automatizo procesos y despliego infraestructura cloud para plataformas SaaS que operan en producción.</p>
+          <ul class="tech-pills" aria-label="Stack principal"><li>React</li><li>Django</li><li>PostgreSQL</li><li>AWS</li><li>Docker</li></ul>
+          <div class="actions">
+            <button class="button" type="button" data-tab-link="productos">Ver productos <i class="bx bx-right-arrow-alt"></i></button>
+            <a class="link-button" href="https://github.com/Gustasco" target="_blank" rel="noreferrer"><i class="bx bxl-github"></i> GitHub</a>
+          </div>
+          <dl class="metrics">
+            <div><dt>02</dt><dd>SaaS en producción</dd></div>
+            <div><dt>~50</dt><dd>Brokers en plataforma</dd></div>
+            <div><dt>100%</dt><dd>Ownership técnico</dd></div>
+          </dl>
+        </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
+        <aside class="profile-card">
+          <div class="profile-photo"><img src="assets/img/IMG_20260619_110523.jpg" alt="Gustavo Salvador Espinoza Aliste" width="1536" height="2048"></div>
+          <div class="profile-card__body">
+            <span class="availability"><i class="bx bxs-circle"></i> Full Stack</span>
+            <h2>Gustavo Salvador<br>Espinoza Aliste</h2>
+            <p><i class="bx bx-map"></i> Isla de Maipo, Chile</p>
+            <div class="profile-socials">
+              <a href="mailto:gustavo.espinoza.aliste@gmail.com" aria-label="Correo"><i class="bx bx-envelope"></i></a>
+              <a href="tel:+56936387510" aria-label="Teléfono"><i class="bx bx-phone"></i></a>
+              <a href="https://github.com/Gustasco" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+              <a href="https://www.linkedin.com/in/gustavo-espinoza-aliste-a4882625a/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="panel" id="perfil" role="tabpanel" aria-labelledby="tab-perfil" tabindex="0" hidden>
+      <div class="panel-inner">
+        <header class="panel-heading">
+          <div><p class="overline">Perfil profesional</p><h2>Producto, código e infraestructura bajo una misma visión.</h2></div>
+          <p>Full Stack Developer especializado en React, Django, PostgreSQL, Docker y AWS.</p>
         </header>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hola!,<br>Me llamo <span class="home__title-color">Gustavo</span><br>Desarrollador Web</h1>
-                </div>
+        <div class="profile-layout">
+          <article class="summary-card">
+            <i class="bx bx-terminal"></i>
+            <p>Responsable del diseño, desarrollo, despliegue y mantenimiento de un ecosistema de plataformas SaaS para el sector inmobiliario.</p>
+            <p>Actualmente lidero de forma individual el desarrollo técnico de Plusvalía y Yo Inversionista, participando en arquitectura, frontend, backend, cloud, DevOps, automatizaciones e integraciones empresariales.</p>
+          </article>
+          <div class="impact-list">
+            <article><strong>100%</strong><div><h3>Ciclo de desarrollo</h3><p>Frontend, backend, bases de datos, infraestructura cloud y DevOps.</p></div></article>
+            <article><strong>02</strong><div><h3>Ecosistemas SaaS</h3><p>Único desarrollador responsable de su evolución y operación.</p></div></article>
+            <article><strong>~50</strong><div><h3>Brokers</h3><p>Usuarios de la plataforma Yo Inversionista.</p></div></article>
+          </div>
+        </div>
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/gustavo-espinoza-aliste-a4882625a/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/Gustasco" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
+        <div class="capabilities">
+          <article><i class="bx bx-layout"></i><h3>Producto</h3><p>CRM, cotizadores, reservas, portales públicos y paneles administrativos.</p></article>
+          <article><i class="bx bx-cloud"></i><h3>Cloud</h3><p>Docker en AWS EC2, almacenamiento S3, Nginx y despliegues automatizados.</p></article>
+          <article><i class="bx bx-git-branch"></i><h3>Integraciones</h3><p>Twilio, Rekognition, AWS SES, Google Ads API y Mercado Pago.</p></article>
+        </div>
+      </div>
+    </section>
 
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="100" y="0" href="./assets/img/IMG_20230228_190420_076.webp"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
+    <section class="panel" id="experiencia" role="tabpanel" aria-labelledby="tab-experiencia" tabindex="0" hidden>
+      <div class="panel-inner">
+        <header class="panel-heading compact">
+          <div><p class="overline">Experiencia profesional</p><h2>Sistemas que sostienen operaciones reales.</h2></div>
+        </header>
 
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">Conoceme</h2>
+        <div class="career">
+          <article class="career-item featured">
+            <div class="career-meta"><span class="company-logo">LG</span><div><strong>Learning Group</strong><small>Mayo 2025 — Actualidad</small></div></div>
+            <div class="career-content">
+              <span class="role-badge">Technical Owner</span>
+              <h3>Full Stack Developer</h3>
+              <p>Único desarrollador responsable del desarrollo, arquitectura, despliegue e infraestructura de plataformas SaaS para el sector inmobiliario.</p>
+              <div class="responsibilities">
+                <span><i class="bx bx-check"></i> CRM y gestión comercial</span>
+                <span><i class="bx bx-check"></i> Reservas y stock inmobiliario</span>
+                <span><i class="bx bx-check"></i> Cotizaciones PDF</span>
+                <span><i class="bx bx-check"></i> Carga masiva desde Excel</span>
+                <span><i class="bx bx-check"></i> Docker, AWS y Nginx</span>
+                <span><i class="bx bx-check"></i> Celery y Redis</span>
+              </div>
+            </div>
+          </article>
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/Esta.jpeg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">Soy Gustavo Espinoza</h2>
-                        <p class="about__text">Tengo 25 años, mis principales aficiones son la programacion. Me encuentro estudiando Analisis y programacion computacional. Me gustan los gatos, la naturaleza. Hace un par de años me encuentro estudiando de forma autodidacta lo que es la programacion para vivir de ello.</p>           
-                    </div>                                   
-                </div>
-            </section>
+          <article class="career-item">
+            <div class="career-meta"><span class="company-logo neutral"><i class="bx bx-code-block"></i></span><div><strong>Independiente</strong><small>Abril 2023 — Actualidad</small></div></div>
+            <div class="career-content"><h3>Full Stack Developer Freelance</h3><p>Diseño y desarrollo de soluciones web completas, desde la experiencia visual y la lógica de negocio hasta APIs, datos y despliegue.</p></div>
+          </article>
+        </div>
 
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
+        <div class="education-row">
+          <p class="overline">Formación</p>
+          <article><span>2024—2026</span><div><h3>Técnico en Análisis y Programación Computacional</h3><p>IACC</p></div></article>
+          <article><span>2022—2023</span><div><h3>Bootcamp Full Stack MERN</h3><p>MindHub LA</p></div></article>
+        </div>
+      </div>
+    </section>
 
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Mis principales herramientas son el stack MERN, aqui lo detallo:</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <img src="./assets/img/icons8-html-50.png" class='bx bxl-html5 skills__icon'></img>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
+    <section class="panel" id="stack" role="tabpanel" aria-labelledby="tab-stack" tabindex="0" hidden>
+      <div class="panel-inner">
+        <header class="panel-heading">
+          <div><p class="overline">Stack tecnológico</p><h2>Herramientas para construir y operar.</h2></div>
+          <p>No uso porcentajes arbitrarios: agrupo mi stack por el valor que aporta al producto.</p>
+        </header>
 
-                            </div>
-                            <div>
-                                <span class="skills__percentage">50%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <img src="./assets/img/icons8-css-50.png" class='bx bxl-css3 skills__icon'></img>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <img src="./assets/img/icons8-javascript-50.png" class='bx bxl-javascript skills__icon' ></img>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">40%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <img src="./assets/img/icons8-react-48.png" class="bx bxs-paint skills__icon">
-                                <span class="skills__name">REACT</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">60%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <img src="./assets/img/icons8-mongo-db-64.png" class="bx bxs-paint skills__icon">
-                                <span class="skills__name">MONGODB</span>
-                            </div>
-                            <div class="skills__bar skills__mongo">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">30%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <img src="./assets/img/icons8-expresar-js-50.png" class="bx bxs-paint skills__icon">
-                                <span class="skills__name">EXPRESS</span>
-                            </div>
-                            <div class="skills__bar skills__express">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">50%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <img src="./assets/img/icons8-nodo-js-48.png" class="bx bxs-paint skills__icon">
-                                <span class="skills__name">NODE</span>
-                            </div>
-                            <div class="skills__bar skills__node">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">40%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
+        <div class="stack-grid">
+          <article class="stack-card primary"><div class="stack-icon"><i class="bx bx-layout"></i></div><h3>Frontend</h3><p>Interfaces rápidas, mantenibles y orientadas al usuario.</p><ul><li>React</li><li>Vite</li><li>JavaScript</li><li>Tailwind CSS</li><li>Material UI</li><li>NextUI</li><li>React Router</li><li>Axios</li><li>Formik</li><li>Yup</li><li>Chart.js</li><li>Framer Motion</li></ul></article>
+          <article class="stack-card"><div class="stack-icon"><i class="bx bx-server"></i></div><h3>Backend & Datos</h3><p>APIs, procesos asíncronos y persistencia confiable.</p><ul><li>Python</li><li>Django</li><li>Django REST</li><li>Node.js</li><li>Express</li><li>Celery</li><li>Redis</li><li>JWT</li><li>PostgreSQL</li><li>MongoDB</li></ul></article>
+          <article class="stack-card"><div class="stack-icon"><i class="bx bx-cloud"></i></div><h3>Cloud & DevOps</h3><p>Infraestructura reproducible y despliegues controlados.</p><ul><li>AWS EC2</li><li>AWS S3</li><li>Docker</li><li>Docker Compose</li><li>Nginx</li><li>GitHub Actions</li><li>Linux</li><li>SSH</li></ul></article>
+          <article class="stack-card"><div class="stack-icon"><i class="bx bx-plug"></i></div><h3>Integración & Automatización</h3><p>Servicios externos, scraping y flujos automatizados.</p><ul><li>Twilio</li><li>Rekognition</li><li>AWS SES</li><li>Google Ads API</li><li>Mercado Pago</li><li>Selenium</li><li>Playwright</li><li>BeautifulSoup</li></ul></article>
+        </div>
+      </div>
+    </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Proyectos</h2>
-                <div id="proyect_text">
-                    <h2>Minga App</h2>
-                </div>
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/Minga/Home.PNG" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/Minga/Comics.PNG" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/Minga/ComicDetail.PNG" alt="">
-                    </a>
-                </div>
-                <div id="proyect_text">
-                    <h2>Travel App</h2>
-                </div>
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/TravelApp/Home.PNG" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/TravelApp/Lugares 1.PNG" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/TravelApp/Lugares 2.PNG" alt="">
-                    </a>
-                </div>
-                <div id="proyect_text">
-                    <h2>Ataraxia</h2>
-                </div>
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/Ataraxia/Home.PNG" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/Ataraxia/ProductosHome.PNG" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/Ataraxia/ProductoDetail.PNG" alt="">
-                    </a>
-                </div>
-                    
-            </section>
+    <section class="panel" id="productos" role="tabpanel" aria-labelledby="tab-productos" tabindex="0" hidden>
+      <div class="panel-inner">
+        <header class="panel-heading">
+          <div><p class="overline">Productos en producción</p><h2>Plataformas que hoy están operando.</h2></div>
+          <p>Ecosistemas inmobiliarios full stack con CRM, portales públicos, stock, reservas y automatizaciones.</p>
+        </header>
 
-        </main>
+        <div class="products-grid">
+          <article class="product-card">
+            <div class="product-header"><div class="product-logo">P+</div><div><span>SaaS inmobiliario</span><h3>Plusvalía</h3></div><a href="https://www.plusvalia.cl/" target="_blank" rel="noreferrer" aria-label="Visitar Plusvalía"><i class="bx bx-up-arrow-alt"></i></a></div>
+            <p>Plataforma React + Django para gestión comercial y de propiedades, validación de identidad, carga masiva y automatización.</p>
+            <div class="product-features"><span><i class="bx bx-check-shield"></i> CRM comercial</span><span><i class="bx bx-check-shield"></i> Validación de identidad</span><span><i class="bx bx-check-shield"></i> Infraestructura cloud</span></div>
+            <ul class="tech-pills"><li>React</li><li>Django</li><li>AWS S3</li><li>Rekognition</li><li>Twilio</li><li>Docker</li></ul>
+            <a class="product-link" href="https://www.plusvalia.cl/" target="_blank" rel="noreferrer">plusvalia.cl <i class="bx bx-right-arrow-alt"></i></a>
+          </article>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Gustavo</p>
-        </footer>
+          <article class="product-card accent">
+            <div class="product-header"><div class="product-logo">YI</div><div><span>Plataforma de inversión</span><h3>Yo Inversionista</h3></div><a href="https://yoinversionista.cl/" target="_blank" rel="noreferrer" aria-label="Visitar Yo Inversionista"><i class="bx bx-up-arrow-alt"></i></a></div>
+            <p>CRM para aproximadamente 50 brokers con clientes, reservas, stock, cotizaciones PDF, administración y portales personalizables.</p>
+            <div class="product-features"><span><i class="bx bx-check-shield"></i> ~50 brokers</span><span><i class="bx bx-check-shield"></i> Cotizaciones PDF</span><span><i class="bx bx-check-shield"></i> Portales públicos</span></div>
+            <ul class="tech-pills"><li>React</li><li>DRF</li><li>PostgreSQL</li><li>Celery</li><li>Redis</li><li>AWS S3</li></ul>
+            <a class="product-link" href="https://yoinversionista.cl/" target="_blank" rel="noreferrer">yoinversionista.cl <i class="bx bx-right-arrow-alt"></i></a>
+          </article>
+        </div>
 
+        <div class="previous-work"><p><span>También he construido</span> Minga App · Travel App · Ataraxia</p><a href="https://github.com/Gustasco" target="_blank" rel="noreferrer">Ver repositorios <i class="bx bx-right-arrow-alt"></i></a></div>
+      </div>
+    </section>
+  </main>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+  <footer class="app-footer">
+    <span>© <span id="year"></span> Gustavo Espinoza</span>
+    <div><a href="mailto:gustavo.espinoza.aliste@gmail.com">gustavo.espinoza.aliste@gmail.com</a><span>·</span><a href="tel:+56936387510">+56 9 3638 7510</a></div>
+  </footer>
+</body>
 </html>
